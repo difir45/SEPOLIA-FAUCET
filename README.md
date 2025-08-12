@@ -7,7 +7,7 @@ This is a simple and secure **Sepolia Testnet Faucet** designed to prevent spam 
 ## 🌟 Features
 
 * ✅ Sends **0.1 Sepolia ETH** per request
-* ✅ Only available to users with **≥ 0.1 ETH on Ethereum Mainnet**
+* ✅ Only available to users with **≥ 0.01 ETH on Ethereum Mainnet**
 * ⏳ Users can claim **once every 24 hours**
 * 🔒 Prevents abuse and ensures testnet resources are used responsibly
 
@@ -34,7 +34,7 @@ This faucet is perfect for:
 ## ⚙️ How It Works
 
 1. User connects their wallet (MetaMask)
-2. The app checks if the user has at least 0.1 ETH on **Ethereum Mainnet**
+2. The app checks if the user has at least 0.01 ETH on **Ethereum Mainnet**
 3. If eligible and 24 hours have passed since the last request, the contract sends **0.1 Sepolia ETH**
 
 ---
