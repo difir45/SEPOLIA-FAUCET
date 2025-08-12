@@ -28,7 +28,7 @@
         </div>
 
         <p class="text-center text-gray-400">
-            Claim 0.1 Sepolia ETH if your mainnet balance is at least 0.1 ETH.
+            Claim 0.1 Sepolia ETH if your mainnet balance is at least 0.01 ETH.
         </p>
         <p class="text-center text-gray-400">
             You can request once every 24 hours.
@@ -104,8 +104,8 @@
         const FAUCET_CONTRACT_ADDRESS = '0x3226348a442B11acf2f1D8f0BFDf2D26E6E9ED8a';
         const FAUCET_ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"FaucetRequest","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"by","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Recharged","type":"event"},{"inputs":[],"name":"COOLDOWN_PERIOD","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"FAUCET_AMOUNT","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"getLastRequest","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"requestSepoliaEth","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdrawAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
 
-        // Hardcoded required mainnet balance (0.1 ETH)
-        const REQUIRED_MAINNET_BALANCE = ethers.utils.parseEther("0.1");
+        // Hardcoded required mainnet balance (0.01 ETH)
+        const REQUIRED_MAINNET_BALANCE = ethers.utils.parseEther("0.01");
         // Cooldown period in seconds (24 hours)
         const COOLDOWN_PERIOD_SECONDS = 24 * 60 * 60;
         // Sepolia chain ID
@@ -319,3 +319,4 @@
     </script>
 </body>
 </html>
+
