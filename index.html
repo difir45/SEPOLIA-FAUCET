@@ -193,7 +193,7 @@
         const FAUCET_CONTRACT_ADDRESS = '0x5AfAA985b74c1C00955FD8Cc454cb348d8603CF5';
         const FAUCET_ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"FaucetRequest","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"by","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Recharged","type":"event"},{"inputs":[],"name":"COOLDOWN_PERIOD","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"FAUCET_AMOUNT","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"getLastRequest","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"requestSepoliaEth","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdrawAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
 
-        const REQUIRED_MAINNET_BALANCE = ethers.utils.parseEther("0.00");
+        const REQUIRED_MAINNET_BALANCE = ethers.utils.parseEther("0.01");
         const COOLDOWN_PERIOD_SECONDS = 24 * 60 * 60;
         const SEPOLIA_CHAIN_ID = '0xaa36a7';
 
@@ -377,5 +377,6 @@
     </script>
 </body>
 </html>
+
 
 
