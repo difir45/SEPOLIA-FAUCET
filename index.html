@@ -301,7 +301,7 @@
 
                 provider = new ethers.providers.Web3Provider(window.ethereum);
                 sepoliaSigner = provider.getSigner();
-                mainnetProvider = new ethers.providers.JsonRpcProvider("https://eth.llamarpc.com");
+                mainnetProvider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.public.blastapi.io");
                 faucetContract = new ethers.Contract(FAUCET_CONTRACT_ADDRESS, FAUCET_ABI, sepoliaSigner);
 
                 userAddressEl.textContent = userAddress;
@@ -377,6 +377,7 @@
     </script>
 </body>
 </html>
+
 
 
 
